@@ -5,6 +5,8 @@ const Demo11 = () => import('../views/demo/11watch.vue')
 const Demo14 = () => import('../views/demo/14provide.vue')
 const Demo16 = () => import('../views/demo/16templte.vue')
 const Demo18 = () => import('../views/demo/18proxy.vue')
+const Demo19 = () => import('../views/vuexdemo/19state')
+const Cart = () => import('../views/cart/index')
 
 Vue.use(VueRouter)
 
@@ -41,6 +43,16 @@ const routes = [
     path: '/demo18',
     name: 'demo18',
     component: Demo18
+  },
+  {
+    path: '/demo19',
+    name: 'demo19',
+    component: Demo19
+  },
+  {
+    path: '/cart',
+    name: 'cart',
+    component: Cart
   },
 ]
 
